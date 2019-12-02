@@ -1,0 +1,2 @@
+# Clogger
+CryptoLogger
