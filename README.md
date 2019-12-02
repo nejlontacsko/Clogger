@@ -1,2 +1,2 @@
 # Clogger
-CryptoLogger
+CryptoLogger - _coming soon_
