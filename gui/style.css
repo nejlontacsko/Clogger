@@ -1,0 +1,147 @@
+@font-face
+      {
+        font-family: fountain;
+        src: url('gui/Fountain.ttf')
+      }
+      
+      BODY
+      {
+        margin: 0px;
+        background-color: #1c3448;
+      }
+      DIV#header
+      {
+        text-align: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        background-color: steelblue;
+        color: white;
+        height: 82px;
+      }
+      DIV#header DIV#title
+      {
+        font-family: fountain;
+        font-style: italic;
+        letter-spacing: 0px;
+        border-right: #3f75a2 2px solid;
+        float: left;
+        padding: 0px 10px 0px 10px;
+        transition: background-color .5s, color 1s;
+        transition-timing-function: cubic-bezier(.47,1.15,.8,-0.48);
+        cursor: pointer;
+      }
+      DIV#header DIV#title:hover
+      {
+        background-color: #bbddff;
+        color: #152736;
+      }
+      DIV#header DIV#menu UL
+      {
+        list-style-type: none;
+        margin: auto;
+      }
+      DIV#header DIV#menu UL LI
+      {
+        display: inline-block;
+        margin: 12px;
+        transform: skewX(-30deg);
+        transition: background-color 1s, color .5s;
+        transition-timing-function: cubic-bezier(.47,1.15,.8,-0.48);
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 20px;
+      }
+      DIV#header DIV#menu UL LI:hover
+      {
+        background-color: #bbddff;
+        color: #152736;
+        cursor: pointer;
+      }
+      DIV#header DIV#menu UL LI SPAN
+      {
+        display: inline-block;
+        transform: skewX(30deg);
+      }
+      DIV#content
+      {
+        margin: 0px 12% 0px 12%;
+        padding: 84px 14px 0px 14px;
+        background-color: white;
+      }
+      DIV#footer
+      {
+        margin: 0px 12% 0px 12%;
+        padding: 10px 40px 10px 40px;
+        background-color: #eeeeee;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      DIV#footer SPAN.mention
+      {
+        color: #3f75a2;
+        text-decoration: none;
+        font-style: italic;
+      }
+      DIV#footer SPAN.mention A,
+      DIV#footer SPAN.mention A:link,
+      DIV#footer SPAN.mention A:visited,
+      DIV#footer SPAN.mention A:hover
+      {
+        color: #3f75a2;
+        text-decoration: underline;
+      }
+      DIV#footer IMG
+      {
+        width: 16px;
+        margin: 2px;
+        vertical-align: text-bottom
+      }
+      DIV#new_post_button
+      {
+        position: fixed;
+        display: block;
+        z-index: 99;
+        right: 40px;
+        bottom: 40px;
+        background-color: steelblue;
+        transform: skewX(-30deg);
+        border-radius: 20px;
+      }
+      DIV#new_post_button IMG
+      {
+        display: inline-block;
+        transform: skewX(30deg);
+        margin: 0px 10px 0px 10px;
+      }
+      
+      DIV.example_post
+      {
+        width: 666px;
+        border: solid black 1px;
+        background-color: #fcfcfc;
+        border-radius: 10px;
+        padding: 12px;
+        margin: 6px;
+        display: inline-block;
+      }
+      DIV.example_post H2
+      {
+        margin-top: 0px;
+        margin-bottom: 6px;
+        padding: 3px;
+      }
+      DIV.example_post DIV.post_content
+      {
+        text-align: justify;
+      }
+      DIV.example_post DIV.post_content P
+      {
+        color: grey;
+      }
+      DIV.example_post DIV.post_footer
+      {
+        color: #152736
+        border-top: grey solid 1px;
+      }
